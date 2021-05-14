@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+html {
+  font-size: 62.6%;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: 40px;
+}
+.between {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.again {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  padding: 15px 20px;
+}
+.number {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background-color: #eee;
+  color: #222;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  display: block;
+  background-color: transparent;
+  border: 3px solid #eee;
+  width: 20rem;
+  height: 100px;
+  color: #eee;
+  font-size: 30px;
+  padding: 3rem;
+  outline: initial;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.check {
+  padding: 15px 20px;
+}
+.right {
+  font-size: 15px;
+  line-height: 2;
+}
+.message {
+  margin-bottom: 40px;
+}
