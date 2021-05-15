@@ -11,6 +11,7 @@ html {
   font-size: 62.6%;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
@@ -20,32 +21,31 @@ body {
 
 header {
   position: relative;
-  height: 35vh;
   border-bottom: 7px solid #eee;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column-reverse;
+  padding-bottom: 100px;
 }
+
 main {
   height: 65vh;
   color: #eee;
   display: flex;
   align-items: center;
 }
+
 h1 {
   font-size: 40px;
+  text-align: center;
+  width: 100%;
 }
-.between {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
+
 .again {
-  position: absolute;
-  top: 40px;
-  left: 40px;
   padding: 15px 20px;
 }
+
 .number {
   position: absolute;
   left: 50%;
@@ -58,17 +58,21 @@ h1 {
   transform: translate(-50%, 50%);
   text-align: center;
 }
+
 main {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .left {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 50vw;
 }
+
 input {
   display: block;
   background-color: transparent;
@@ -82,13 +86,36 @@ input {
   margin-bottom: 15px;
   text-align: center;
 }
+
 .check {
   padding: 15px 20px;
 }
+
 .right {
   font-size: 15px;
   line-height: 2;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .message {
   margin-bottom: 40px;
+  max-width: 50vw;
+  text-align: center;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 20px;
+  }
 }
